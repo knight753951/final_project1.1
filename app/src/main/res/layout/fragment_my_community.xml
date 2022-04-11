@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pink"
+    tools:context=".MyCommunity">
+
+    <!-- TODO: Update blank fragment layout -->
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="50dp"
+       android:background="@color/pink"
+       android:id="@+id/ding_bu">
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="动态"
+           android:textColor="@color/black"
+           android:textSize="20dp"
+           android:layout_marginTop="10dp"
+           android:layout_centerHorizontal="true"
+           />
+    <Button
+        android:id="@+id/share_button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/share_camera"
+        android:scaleX="0.3"
+        android:scaleY="0.5"
+
+        />
+
+
+   </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/edittext_shape02">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="600dp"
+            android:background="@drawable/edittext_shape02"
+            android:orientation="vertical"
+            android:divider="@drawable/jun_divider">
+
+
+            <Button
+                android:id="@+id/btn_textview"
+                android:layout_gravity="center"
+                android:layout_width="350dp"
+                android:layout_height="350dp"
+                android:layout_marginTop="60dp"
+                android:text="TextView"
+                android:textAllCaps="false"
+                />
+            <RelativeLayout
+                android:layout_width="350dp"
+                android:layout_height="350dp"
+                android:layout_gravity="center">
+                <Button
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/user_photo"
+                    android:backgroundTint="@color/black"
+                    android:id="@+id/user_photo"
+
+                    ></Button>
+                <TextView
+                    android:layout_toRightOf="@id/user_photo"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="陈羽浩的爸爸"
+                   android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:textColor="@color/black"
+
+                    ></TextView>
+                <TextView
+                    android:layout_below="@id/user_photo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="50dp"
+                    android:textColor="@color/black"
+                    android:id="@+id/wen_zhang1"
+                    android:text="今天带两个儿子去看海了，他们很兴奋！"
+
+                    ></TextView>
+
+            <ImageView
+                android:layout_below="@+id/wen_zhang1"
+
+                android:id="@+id/btn_button"
+                android:layout_gravity="center"
+                android:layout_width="350dp"
+                android:layout_height="250dp"
+
+                android:background="@drawable/sea"
+                android:textAllCaps="false" />
+                <TextView
+                    android:layout_below="@+id/btn_button"
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+
+                    android:text="2022年3月17日 19:10"
+                    android:textColor="@color/gray_q"
+                    android:textSize="15dp"
+
+                    ></TextView>
+                <Button
+                   android:layout_below="@+id/btn_button"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/my_comment"
+                    android:backgroundTint="@color/gray_q"
+                    android:layout_alignParentRight="true"
+                    ></Button>
+            </RelativeLayout>
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/round2"
+         android:fitsSystemWindows="true"
+        android:layout_alignParentLeft="true"
+
+        ></ImageView>
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="50dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/round1"
+        android:fitsSystemWindows="true"
+
+        ></ImageView>
+
+
+</RelativeLayout>

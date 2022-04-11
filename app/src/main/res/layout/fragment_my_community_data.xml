@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".my_community_data">
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="50dp"
+      android:background="@color/pink"
+      android:id="@+id/my_community_top">
+
+      <Button
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:id="@+id/my_community_share"
+          android:layout_alignParentTop="true"
+          android:layout_alignParentRight="true"
+          android:scrollbarSize="20dp"
+          android:background="@color/pink"
+          android:text="分享"
+          android:textColor="@color/gray"
+
+
+          ></Button>
+      <Button
+          android:layout_width="20dp"
+          android:layout_height="20dp"
+          android:background="@drawable/ic_baseline_arrow_back_ios_24"
+          android:id="@+id/my_community_back"
+          android:layout_centerInParent="true"
+          android:layout_alignParentLeft="true"
+
+          ></Button>
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="分享生活"
+          android:textSize="20dp"
+          android:textColor="@color/gray"
+          android:layout_centerInParent="true"
+          android:gravity="center"
+
+          ></TextView>
+  </RelativeLayout>
+<EditText
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    android:background="@color/white"
+    android:gravity="top"
+    android:text="这一刻的想法..."
+    android:textColor="@color/gray_q"
+    android:layout_marginTop="50dp"
+
+></EditText>
+<View
+
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:layout_marginTop="300dp"
+    android:background="@color/gray_q"
+
+    ></View>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="302dp"
+        android:background="#F4F4F4"
+        android:textColor="@color/gray"
+        android:text="添加图片"
+        android:id="@+id/my_community_share_photo"
+        ></Button>
+
+</FrameLayout>
+
+
+
+
+
